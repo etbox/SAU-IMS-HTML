@@ -87,9 +87,9 @@ form:before{/*此处留空，用来警告“请输入账号密码”*/
 
 [type="text"]{/*不用id了，直接用属性选择器，把id的作用留给js*/
 	top: 15px;
-	width: 284px;
+	width: 274px;
 	height: 70px;
-	padding-left: 66px;
+	padding-left: 76px;
 	font-size: 5em;
 	background: url(../img/账号.png) no-repeat left center;
 	border: solid 1px;
@@ -97,9 +97,9 @@ form:before{/*此处留空，用来警告“请输入账号密码”*/
 
 [type="password"]{/*此处不适用top，因为计算top是从上个输入框的中部开始计算的*/
 	margin-top: 40px;
-	width: 284px;
+	width: 274px;
 	height: 70px;
-	padding-left: 66px;
+	padding-left: 76px;
 	font-size: 5em;
 	background: url(../img/密码.png)  no-repeat left center;
 	border: solid 1px;
