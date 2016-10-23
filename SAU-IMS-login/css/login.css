@@ -80,7 +80,7 @@ form{
 }
 
 form:before{/*此处留空，用来警告“请输入账号密码”*/
-	content: "aaaaaaaaaaaa";
+	content: attr(data-attr) "foo";
 	font-size: 1.8em;
 	color: #f33;
 }
