@@ -5,6 +5,23 @@ var css=function(t,s){
     document.body.appendChild(s);
 };
 
-document.onclick=function(){
-    css('form:before{content:\'修改一下\'}');
-};
+$("#submit").click(function(){
+    $.ajax({
+        url:'login_admin.php',
+        type:"POST",
+        data:$('#form').serialize(),
+        success: function(data) {
+           css('form:before{content:\''+data+'\'}');
+        }
+    });
+});
+
+
+// var a = "用户名和密码不能为空！";
+
+// document.onclick=function(){
+//     if (!($("[type='text']").val() && $("[type='password']").val())) {
+//     	css('form:before{content:\''+a+'\'}');
+//     }
+// };
+
