@@ -7,16 +7,18 @@
 </head>
 <body>
 	<header>
+		<img src="img/logo.png" alt="" class="logo rlt">
 		<h1 id="header" class="rlt">校社联·信息管理系统</h1>
 	</header>
 	<main>
-		<div class="container rlt">
-			<span class="login rlt">登录</span>
+		<div class="formContainer rlt">
+			<span class="login rlt">登录</span><br>
+			<span class="tips rlt">请输入账号密码</span>
 			<form action="" class="rlt" method="post">
 				<div class="settled">
-				<input type="text" id="user" class="rlt" value="user" name="userName">
-				<input type="password" id="password" class="rlt" value="password" name="password">
-				<div class="row rlt">
+				<input type="text" id="user" class="rlt" placeholder="账号|用户名" name="userName" autocomplete="off">
+				<input type="password" id="password" class="rlt" placeholder="密码" name="password">
+				<div class="row rlt" autocomplete="off">
 					<input type="checkbox" id="checkbox">
 					<span class="remember rlt">记住账号</span>
 					<a href="" class="forget">忘记密码</a>
