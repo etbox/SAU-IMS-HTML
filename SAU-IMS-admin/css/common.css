@@ -1,0 +1,125 @@
+/*
+ *先把整体布局的样式写出来，再调整登录框的样式
+*/
+
+.rlt{/*这个属性要经常用，直接引用类以减少冗余代码*/
+	position: relative;
+}
+
+/*整体页面初始化*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	max-height: 930px;
+	width: 100%;
+	font-size: 62.5%;
+	font-family: Microsoft Yahei;
+	overflow:hidden
+}
+
+/*页眉部分*/
+
+header{
+	height: 80px;
+	background-color: #fff;
+	display: block;
+}
+
+.logo {
+	margin-left: 180px;
+	margin-top: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+.header{
+	display: inline;
+	margin-left: 10px;
+	top: -20px;
+	font-size: 3em;
+	font-weight: lighter;
+	color: rgba(102,102,102,1);
+	width: 300px;
+}
+
+.ring {
+	top: 25px;
+	right: 300px;
+	float: right;
+}
+
+.userImg {
+	top: 15px;
+	right: 180px;
+	float: right;
+}
+
+/*主体部分*/
+
+section{
+	height: 746px;
+	background-image: url(../img/background.png);
+}
+
+/*页脚部分*/
+
+footer{
+	height: 100px;
+	text-align: center;
+	background-color: rgba(170,170,170,1);
+}
+
+#footer{
+	top: 40%;
+	font-size: 2em;
+}
+
+/*
+ *以上为整体布局的样式
+*/
+
+.Container {
+	top: 5%;
+	margin: 0 auto;
+	height: 90%;
+	width: 80%;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+ .Container nav {
+ 	height: 100%;
+	width: 15%;
+	border: 1px solid #aaa;
+}
+
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding-top: 120px;
+	font-size: 2em;
+	color: rgb(102, 102, 102);
+}
+
+.navigation li {
+	padding: 20px 0;
+}
+
+.checked {
+	display: block;
+	background-color: #7ecef4;
+}
+
+.navigation a {
+	text-decoration: none;
+}
+
+.navigation a:link,
+.navigation a:active,
+.navigation a:hover,
+.navigation a:visited {
+	color: rgb(102, 102, 102);
+}
