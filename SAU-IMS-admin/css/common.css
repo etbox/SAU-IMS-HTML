@@ -2,8 +2,16 @@
  *先把整体布局的样式写出来，再调整登录框的样式
 */
 
+.abs {
+	position: absolute;
+}
+
 .rlt{/*这个属性要经常用，直接引用类以减少冗余代码*/
 	position: relative;
+}
+
+.fll {
+	float: left;
 }
 
 /*整体页面初始化*/
@@ -90,7 +98,7 @@ footer{
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
- .Container nav {
+ .leftBar {
  	height: 100%;
 	width: 15%;
 	border: 1px solid #aaa;
@@ -122,4 +130,63 @@ footer{
 .navigation a:hover,
 .navigation a:visited {
 	color: rgb(102, 102, 102);
+}
+
+/*以上是左边的导航栏样式*/
+
+.middleBar {
+	height: 100%;
+	width: 30%;
+	background-color: #eee;
+	border: 1px solid #aaa;
+}
+
+.searchBar {
+	height: 7%;
+	border: 1px solid #aaa;
+}
+
+#searchField{
+	width: 83%;
+	height: 45px;
+	/*border: none;*/
+	background-color: inherit;
+	border: 1px solid #6cf;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	color:#6cf;
+	font-size: 2em;
+	font-family: Microsoft Yahei;
+	/*text-align: left;*/
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:#6cf;
+	font-size: 2em;
+	font-family: Microsoft Yahei;
+	/*text-align: left;*/
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:#6cf;
+	font-size: 2em;
+	font-family: Microsoft Yahei;
+	/*text-align: left;*/
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color:#6cf;
+	font-size: 2em;
+	font-family: Microsoft Yahei;
+	/*text-align: left;*/
+}
+
+.magnifyingMirror{
+	cursor: pointer;
+	top: 1.5%;
+	left: 37%;
+}
+
+.refresh {
+	cursor: pointer;
+	top: 1.5%;
+	left: 41%;
 }
