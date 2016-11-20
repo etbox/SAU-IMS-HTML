@@ -1,12 +1,12 @@
 /*
- *å…ˆæŠŠæ•´ä½“å¸ƒå±€çš„æ ·å¼å†™å‡ºæ¥ï¼Œå†è°ƒæ•´ç™»å½•æ¡†çš„æ ·å¼
+ *ÏÈ°ÑÕûÌå²¼¾ÖµÄÑùÊ½Ğ´³öÀ´£¬ÔÙµ÷ÕûµÇÂ¼¿òµÄÑùÊ½
 */
 
 .abs {
 	position: absolute;
 }
 
-.rlt{/*è¿™ä¸ªå±æ€§è¦ç»å¸¸ç”¨ï¼Œç›´æ¥å¼•ç”¨ç±»ä»¥å‡å°‘å†—ä½™ä»£ç */
+.rlt{/*Õâ¸öÊôĞÔÒª¾­³£ÓÃ£¬Ö±½ÓÒıÓÃÀàÒÔ¼õÉÙÈßÓà´úÂë*/
 	position: relative;
 }
 
@@ -14,7 +14,11 @@
 	float: left;
 }
 
-/*æ•´ä½“é¡µé¢åˆå§‹åŒ–*/
+.flr {
+	float: right;
+}
+
+/*ÕûÌåÒ³Ãæ³õÊ¼»¯*/
 
 *{
 	margin: 0;
@@ -23,17 +27,19 @@
 
 html{
 	max-height: 930px;
+	min-width: 1280px;
 	width: 100%;
 	font-size: 62.5%;
 	font-family: Microsoft Yahei;
-	overflow:hidden
+	overflow-y: auto;
+	overflow-x: auto;
 }
 
-/*é¡µçœ‰éƒ¨åˆ†*/
+/*Ò³Ã¼²¿·Ö*/
 
 header{
 	height: 80px;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 1);
 	display: block;
 }
 
@@ -50,7 +56,7 @@ header{
 	top: -20px;
 	font-size: 3em;
 	font-weight: lighter;
-	color: rgba(102,102,102,1);
+	color: rgba(102, 102, 102, 1);
 	width: 300px;
 }
 
@@ -66,14 +72,14 @@ header{
 	float: right;
 }
 
-/*ä¸»ä½“éƒ¨åˆ†*/
+/*Ö÷Ìå²¿·Ö*/
 
 section{
 	height: 746px;
 	background-image: url(../img/background.png);
 }
 
-/*é¡µè„šéƒ¨åˆ†*/
+/*Ò³½Å²¿·Ö*/
 
 footer{
 	height: 100px;
@@ -87,7 +93,7 @@ footer{
 }
 
 /*
- *ä»¥ä¸Šä¸ºæ•´ä½“å¸ƒå±€çš„æ ·å¼
+ *ÒÔÉÏÎªÕûÌå²¼¾ÖµÄÑùÊ½
 */
 
 .Container {
@@ -132,7 +138,7 @@ footer{
 	color: rgb(102, 102, 102);
 }
 
-/*ä»¥ä¸Šæ˜¯å·¦è¾¹çš„å¯¼èˆªæ æ ·å¼*/
+/*ÒÔÉÏÊÇ×ó±ßµÄµ¼º½À¸ÑùÊ½*/
 
 .middleBar {
 	height: 100%;
@@ -142,51 +148,155 @@ footer{
 }
 
 .searchBar {
-	height: 7%;
+	height: 7.3%;
 	border: 1px solid #aaa;
 }
 
 #searchField{
 	width: 83%;
-	height: 45px;
+	height: 48px;
 	/*border: none;*/
 	background-color: inherit;
 	border: 1px solid #6cf;
+	font-size: 2em;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-	color:#6cf;
-	font-size: 2em;
+	color: rgba(102, 204, 255, 1);
 	font-family: Microsoft Yahei;
-	/*text-align: left;*/
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	color:#6cf;
-	font-size: 2em;
+	 color: rgba(102, 204, 255, 1); 
 	font-family: Microsoft Yahei;
-	/*text-align: left;*/
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-	color:#6cf;
-	font-size: 2em;
+	color: rgba(102, 204, 255, 1);
 	font-family: Microsoft Yahei;
-	/*text-align: left;*/
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-	color:#6cf;
-	font-size: 2em;
+	color: rgba(102, 204, 255, 1);
 	font-family: Microsoft Yahei;
-	/*text-align: left;*/
 }
 
 .magnifyingMirror{
 	cursor: pointer;
 	top: 1.5%;
-	left: 37%;
+	left: 37.5%;
 }
 
 .refresh {
 	cursor: pointer;
 	top: 1.5%;
-	left: 41%;
+	left: 41.4%;
+}
+
+/*ÒÔÉÏÊÇËÑË÷À¸µÄÑùÊ½*/
+
+.labelBar {
+	height: 7.3%;
+	/*border: 1px solid #aaa;*/
+}
+
+.label {
+	font-size: 2.5em;
+	padding: 7px 0;
+	margin-left: 20px;
+	color: rgba(102, 102, 102, 1);
+}
+
+.new {
+	cursor: pointer;
+	top: 9%;
+	left: 37.5%;
+}
+
+.delete {
+	cursor: pointer;
+	top: 9%;
+	left: 41.4%;
+}
+
+/*ÒÔÉÏÊÇ¹«¸æÀ¸µÄÑùÊ½*/
+
+.listContainer {
+	height: 84.1%;
+	border: 1px solid #aaa;
+	padding-top: 5px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/*::-webkit-scrollbar-track-piece  {
+	background-color: #f3f3f3;
+}*/
+/*¸ã²»¶¨¹ö¶¯Ìõ°¡°¡°¡*/
+
+.announcementList {
+	list-style: none;
+}
+
+.content {
+	height: 80px;
+	width: 100%;
+	margin-bottom: 25px;
+	background-color: #fff;
+	/*border: 1px solid #aaa;*/
+}
+
+.content:hover {
+	background-color: rgba(204, 228, 240, 1);
+}
+
+.content:active {
+	background-color: rgba(126, 206, 244, 1);
+}
+
+.token {
+	width: 7px;
+	height: 50px;
+	margin: 15px 0;
+	background-color: rgba(126, 206, 244, 1);
+}
+
+.sender {
+	display: inline-block;
+	color: rgba(102, 102, 102, 1);
+	font-weight: 400;
+	font-size: 2.5em;
+	margin-top: 16px;
+	margin-left: 10px;
+}
+
+.announcementTitle {
+/*	width: 100px;
+	height: 20px;*/
+	display: inline-block;
+	color: rgba(0, 153, 255, 1);
+	font-weight: 500;
+	font-size: 1.5em;
+	margin-top: 48px;
+	margin-left: -75px;
+/*	overflow: hidden; 
+	text-overflow: ellipsis;*/
+}
+
+input[type="checkbox" i] {
+	height: 15px;
+	width: 15px;
+	margin-top: 25px;
+	/*margin-right: 20px;*/
+}
+
+.checkbox {
+	right: 7.5%
+}
+
+.time {
+	/*Ç§Íò±ğ¸øÕâÆÆÍæÒâ¼Ó¸¡¶¯£¬·ñÔòËü»áËæ×Å¿í¶È±ä»¯·ÉÀ´·ÉÈ¥*/
+	width: 165px;
+	height: 15px;
+	color: rgba(153, 153, 153, 1);
+	font-size: 1.5em;
+	top: -25%;
+	right: -60%;
 }
