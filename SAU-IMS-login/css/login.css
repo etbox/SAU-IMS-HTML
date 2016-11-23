@@ -18,7 +18,7 @@ html{
 	width: 100%;
 	font-size: 62.5%;
 	font-family: Microsoft Yahei;
-	overflow:hidden
+	overflow-x:hidden;
 }
 
 /*页眉部分*/
@@ -53,7 +53,7 @@ main{
 .formContainer{
 	left: 60.26%;
 	top: 17%;
-	height: 450px;
+	height: 470px;
 	width: 355px;
 	padding-left: 50px;
 	border-radius: 10px;
@@ -63,7 +63,7 @@ main{
 /*页脚部分*/
 
 footer{
-	height: 100px;
+	height: 120px;
 	text-align: center;
 	background-color: rgba(170,170,170,1);
 }
@@ -84,8 +84,8 @@ footer{
 }
 
 .tips {
-	top: 40px;
-	font-size: 1.5em;
+	top: 48px;
+	font-size: 1.7em;
 	color: #f00;
 }
 
@@ -141,7 +141,7 @@ form{
 	text-decoration: none;
 }
 
-[type="submit"]{
+[type="button"]{
 	top: 60px;
 	width: 300px;
 	height: 50px;
@@ -153,11 +153,11 @@ form{
 	font-family: Microsoft Yahei;
 }
 
-[type="submit"]:hover{
+[type="button"]:hover{
 	background-color: rgba(0,113,48,1);
 }
 
-[type="submit"]:active{
+[type="button"]:active{
 	color: rgba(102,102,102,1);
 	background-color: #fff;
 }

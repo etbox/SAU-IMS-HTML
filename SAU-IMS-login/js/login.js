@@ -1,27 +1,33 @@
+document.getElementById("button").onclick=function() {
+    var xmlhttp;
+    var userName = document.getElementById("user").value;
+    var password = document.getElementById("password").value;
 
-var css=function(t,s){
-    s=document.createElement('style');
-    s.innerText=t;
-    document.body.appendChild(s);
-};
+    if (userName == "" || password == "") {
+        document.getElementById("tips").innerHTML = "用户或密码不能为空";
+        return;
+    }
 
-$("#submit").click(function(){
-    $.ajax({
-        url:'login_admin.php',
-        type:"POST",
-        data:$('#form').serialize(),
-        success: function(data) {
-           css('form:before{content:\''+data+'\'}');
+
+    if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        xmlhttp = new ActiveXObject();
+    }
+
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var json = xmlhttp.responseText;
+            var login=eval("("+json+")");
+            if(login.success){
+                location.href=login.url;
+            }else{
+                document.getElementById("tips").innerHTML=login.message;
+            }
         }
-    });
-});
-
-
-// var a = "用户名和密码不能为空！";
-
-// document.onclick=function(){
-//     if (!($("[type='text']").val() && $("[type='password']").val())) {
-//     	css('form:before{content:\''+a+'\'}');
-//     }
-// };
+    }
+    xmlhttp.open("POST", "../../controller/login_admin.php", true);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send("userName=" + userName + "&password=" + password);
+}
 

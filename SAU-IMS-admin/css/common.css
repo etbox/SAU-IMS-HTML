@@ -84,7 +84,7 @@ header{
 /*页脚部分*/
 
 footer{
-	height: 100px;
+	height: 120px;
 	text-align: center;
 	background-color: rgba(170,170,170,1);
 }
@@ -152,8 +152,9 @@ footer{
 }
 
 #searchField{
-	width: 83%;
+	width: 78%;
 	height: 48px;
+	padding-left: 20px;
 	/*border: none;*/
 	background-color: inherit;
 	border: 1px solid #6cf;
@@ -165,7 +166,7 @@ footer{
 	font-family: Microsoft Yahei;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	 color: rgba(102, 204, 255, 1); 
+	 color: rgba(102, 204, 255, 1);
 	font-family: Microsoft Yahei;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
@@ -180,7 +181,7 @@ footer{
 .magnifyingMirror{
 	cursor: pointer;
 	top: 1.5%;
-	left: 37.5%;
+	left: 36%;
 }
 
 .refresh {
@@ -206,7 +207,7 @@ footer{
 .new {
 	cursor: pointer;
 	top: 9%;
-	left: 37.5%;
+	left: 36%;
 }
 
 .delete {
@@ -275,11 +276,11 @@ footer{
 	font-size: 1.5em;
 	margin-top: 48px;
 	margin-left: -75px;
-/*	overflow: hidden; 
+/*	overflow: hidden;
 	text-overflow: ellipsis;*/
 }
 
-input[type="checkbox" i] {
+input[type="checkbox"] {
 	height: 15px;
 	width: 15px;
 	margin-top: 25px;
