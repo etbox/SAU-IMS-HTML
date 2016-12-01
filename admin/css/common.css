@@ -84,7 +84,7 @@ header{
 /*页脚部分*/
 
 footer{
-	height: 120px;
+	height: 100px;
 	text-align: center;
 	background-color: rgba(170,170,170,1);
 }
@@ -152,13 +152,12 @@ footer{
 }
 
 #searchField{
-	width: 78%;
+	width: 83%;
 	height: 48px;
-	padding-left: 20px;
-	/*border: none;*/
 	background-color: inherit;
 	border: 1px solid #6cf;
 	font-size: 2em;
+	padding-left: 10px;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -181,7 +180,7 @@ footer{
 .magnifyingMirror{
 	cursor: pointer;
 	top: 1.5%;
-	left: 36%;
+	left: 37.5%;
 }
 
 .refresh {
@@ -207,7 +206,7 @@ footer{
 .new {
 	cursor: pointer;
 	top: 9%;
-	left: 36%;
+	left: 37.5%;
 }
 
 .delete {
@@ -258,14 +257,14 @@ footer{
 	background-color: rgba(126, 206, 244, 1);
 }
 
-.sender {
+/*.sender {
 	display: inline-block;
 	color: rgba(102, 102, 102, 1);
 	font-weight: 400;
 	font-size: 2.5em;
 	margin-top: 16px;
 	margin-left: 10px;
-}
+}*/
 
 .announcementTitle {
 /*	width: 100px;
@@ -371,6 +370,66 @@ input[type="checkbox"] {
 	font-weight: 100;
 }
 
-.ti2 {
-	text-indent: 2em;
+/*以上是公告部分布局（不包含新建公告）*/
+
+#announcementTitle {
+	display: none;
+}
+
+.newAnnouncement {
+	color: rgba(51, 51, 51, 1);
+	font-size: 3em;
+	padding-left: 45px;
+	padding-top: 23px;
+}
+
+#announcementContent {
+	display: none;
+}
+
+#newTitle {
+	height: 50px;
+	width: 100%;
+	border: solid 2px rgba(153, 153, 153, 1);
+	border-radius: 10px;
+	background-color: inherit;
+	font-size: 2em;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: -10px;
+}
+
+#newBody {
+	resize: none;
+	width: 100%;
+	height: 400px;
+	border: solid 2px rgba(153, 153, 153, 1);
+	border-radius: 10px;
+	background-color: inherit;
+	font-size: 2em;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: -10px;
+}
+
+#submit{
+	width: 200px;
+	height: 50px;
+	background-color: rgba(50,177,108,1);
+	color: white;
+	font-size: 2em;
+	border-radius: 10px;
+	border: transparent;
+	font-family: Microsoft Yahei;
+	margin-top: 10px;
+}
+
+#submit:hover{
+	background-color: rgba(0,113,48,1);
+}
+
+#submit:active{
+	color: rgba(102,102,102,1);
+	background-color: #fff;
 }
