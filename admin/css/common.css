@@ -37,6 +37,9 @@ html{
 	overflow-x: auto;
 }
 
+a {
+	text-decoration: none;
+}
 /*页眉部分*/
 
 header{
@@ -65,15 +68,64 @@ header{
 .ring {
 	top: 25px;
 	right: 300px;
-	float: right;
 }
 
 .userImg {
 	top: 15px;
 	right: 180px;
-	float: right;
 }
 
+.downArrow {
+	top: 35px;
+	right: 100px;
+}
+
+.menuContainer {
+	top: 60px;
+	right: 60px;
+	position: absolute;
+	z-index: 1;
+}
+
+.upArrow {
+	height: 0;
+	width: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 10px solid rgba(255, 255, 255, 0.8);
+	top: 2px;
+	z-index: 2;
+}
+
+.menu {
+	height: 172px;
+	width: 139px;
+	top: 10px;
+	right: 25px;
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 1.8em;
+	padding: 20px 0;
+	border: 2px solid rgba(0, 0, 51, 0.44);
+	border-radius: 15px;
+}
+
+.menulist {
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.menulist:hover {
+	background-color: rgba(238, 238, 238, 0.8);
+}
+
+.menuA {
+	color: rgba(102, 102, 102, 1)
+}
+
+.menuA:hover {
+	color: rgba(51, 204, 255, 1);
+}
 /*主体部分*/
 
 .threeBars{
@@ -124,9 +176,13 @@ footer{
 	padding: 20px 0;
 }
 
-.checked {
+.navigation li:hover {
+	background-color: rgba(195, 220, 233, 1);
+}
+
+#navChecked {
 	display: block;
-	background-color: #7ecef4;
+	background-color: rgba(102, 204, 255, 1);;
 }
 
 .navigation a:link,
@@ -257,26 +313,13 @@ footer{
 	background-color: rgba(126, 206, 244, 1);
 }
 
-/*.sender {
-	display: inline-block;
-	color: rgba(102, 102, 102, 1);
-	font-weight: 400;
-	font-size: 2.5em;
-	margin-top: 16px;
-	margin-left: 10px;
-}*/
-
 .announcementTitle {
-/*	width: 100px;
-	height: 20px;*/
-	display: inline-block;
-	color: rgba(0, 153, 255, 1);
+	display: block;
+	color: rgba(51, 51, 51, 1);
 	font-weight: 500;
-	font-size: 1.5em;
-	margin-top: 48px;
-	margin-left: -75px;
-/*	overflow: hidden;
-	text-overflow: ellipsis;*/
+	font-size: 2em;
+	margin-top: 15px;
+	margin-left: 10px;
 }
 
 input[type="checkbox"] {
@@ -296,8 +339,8 @@ input[type="checkbox"] {
 	height: 15px;
 	color: rgba(153, 153, 153, 1);
 	font-size: 1.5em;
-	top: -25%;
-	right: -60%;
+	display: block;
+	margin-left: 20px;
 }
 
 /*中间这栏终于做完了*/
